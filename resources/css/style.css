@@ -4,39 +4,57 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  margin: 0;
 }
 
 /* Header */
 
 .header {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
   width: 100%;
   height: 69px;
   position: fixed;
   border-bottom: 1px solid seashell;
   background-color: black;
-  align-items: baseline;
-}
-
-.logo {
-}
-
-.logo img {
-  height: 50px;
 }
 
 .nav {
-  display: inline-flex;
-  justify-content: flex-end;
+  text-align: right;
+  flex-grow: 1;
 }
 
-.header li {
-  list-style: none;
-  display: inline-flex;
-  padding: 0 10px;
+.logo img {
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+  width: auto;
+  margin-top: 10px;
+
 }
+
+.nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+a {
+  color: seashell;
+  text-decoration: underline;
+}
+
 
 /* Mission/Main Content */
+
+.main {
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
+}
 
 .mission {
   display: flex;
@@ -44,7 +62,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 700px;
-  width: 1200px;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
 }
 
@@ -76,7 +93,7 @@ img {
 .title h2 {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 150px;
 }
 
 .title .subhedline {
@@ -136,7 +153,7 @@ img {
 }
 
 .title {
-  margin-top: -100px;
+  margin-top: -185px;
 }
 
 .boxes {
@@ -183,4 +200,26 @@ img {
 
 .address {
   text-align: center;
+}
+
+/* Footer */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: auto;
+}
+
+.info h2 {
+  padding-top: 10px;
+}
+
+/* Copyright */
+
+.copyright {
+  text-align: left;
+  margin-left: 20px;
 }
