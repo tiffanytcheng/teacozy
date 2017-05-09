@@ -211,6 +211,7 @@ img {
   align-items: center;
   height: 200px;
   width: auto;
+  padding: 40px 0;
 }
 
 .info h2 {
